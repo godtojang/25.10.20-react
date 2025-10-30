@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="box.css">
+	<style>
+		.flex-demo {
+			display: flex;
+			flex-wrap: wrap;
+			border: 2px dashed #000;
+			background-color: #ecf0f1;
+			width: 100%;
+			max-width: 600px;
+			height: 300px;
+			margin-bottom: 20px;
+		}
+
+		.item {
+			width: 100px;
+			font-size: 32px;
+			color: white;
+			text-align: center;
+			border: 2px solid black;
+			margin: 10px;
+			border-radius: 6px;
+			font-weight: bold;
+			line-height: 60px;
+			height: 60px;
+		}
+
+		.ac-stretch {
+			align-content: stretch;
+		}
+
+		.ac-flex-start {
+			align-content: flex-start;
+		}
+
+		.ac-flex-end {
+			align-content: flex-end;
+		}
+
+		.center {
+			align-content: center;
+		}
+
+		.space-between {
+			align-content: space-between;
+		}
+
+		.space-around {
+			align-content: space-around;
+		}
+	</style>
+</head>
+<body>
+	<h1>align-content 속성 실습</h1>
+	<h2>stretch(공간을 쭉 늘려서 차지)</h2>
+	<section class="flex-demo ac-stretch">
+		<div class="item a">A</div>
+		<div class="item b">B</div>
+		<div class="item c">C</div>
+		<div class="item d">D</div>
+		<div class="item e">E</div>
+		<div class="item f">F</div>
+	</section>
+	<h2>flex-start(윗 쪽으로 몰림)</h2>
+	<section class="flex-demo ac-flex-start">
+		<div class="item a">A</div>
+		<div class="item b">B</div>
+		<div class="item c">C</div>
+		<div class="item d">D</div>
+		<div class="item e">E</div>
+		<div class="item f">F</div>
+	</section>
+	<h2>flex-end(아래 쪽으로 몰림)</h2>
+	<section class="flex-demo ac-flex-end">
+		<div class="item a">A</div>
+		<div class="item b">B</div>
+		<div class="item c">C</div>
+		<div class="item d">D</div>
+		<div class="item e">E</div>
+		<div class="item f">F</div>
+	</section>
+	<h2>center(가운데로 몰림)</h2>
+	<section class="flex-demo center">
+		<div class="item a">A</div>
+		<div class="item b">B</div>
+		<div class="item c">C</div>
+		<div class="item d">D</div>
+		<div class="item e">E</div>
+		<div class="item f">F</div>
+	</section>
+	<h2>space-between(맨 위/맨 아래 고정, 나머지는 균등하게 벌어짐)</h2>
+	<section class="flex-demo space-between">
+		<div class="item a">A</div>
+		<div class="item b">B</div>
+		<div class="item c">C</div>
+		<div class="item d">D</div>
+		<div class="item e">E</div>
+		<div class="item f">F</div>
+	</section>
+	<h2>space-around(각 줄 위아래에 동일한 여백 분배)</h2>
+	<section class="flex-demo space-around">
+		<div class="item a">A</div>
+		<div class="item b">B</div>
+		<div class="item c">C</div>
+		<div class="item d">D</div>
+		<div class="item e">E</div>
+		<div class="item f">F</div>
+	</section>
+</body>
+</html>
