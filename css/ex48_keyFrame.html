@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body {
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		@keyframes bounceColor {
+			0% {
+				transform: translateY(0);
+				background-color: #60a5fa;
+			}
+
+			50% {
+				transform: translateY(-24px);
+				background-color: #f5920b;
+			}
+
+			100% {
+				transform: translateY(0);
+				background-color: #8b5cf6;
+			}
+		}
+
+		.box {
+			width: 120px;
+			height: 120px;
+			border-radius: 16px;
+			background-color: #60a5fa;
+			animation: bounceColor 2.4s ease-in-out infinite alternate;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+
+	</div>
+</body>
+</html>
