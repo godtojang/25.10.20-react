@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .wrap {
+      display: flex;
+      gap: 24px;
+      padding: 20px;
+    }
+
+    .container {
+      flex: 1;
+      border: 2px solid #ddd;
+      padding: 16px;
+      border-radius: 8px;
+    }
+
+    .grid {
+      display: grid;
+      /* minmax(150px, 1fr) : 최소 150px 확보 + 남은 공간은 1fr로 확장 */
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 10px;
+    }
+
+    .grid.fit {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .item {
+      background-color: #3498db;
+      color: white;
+      text-align: center;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="container">
+      <h2>auto-fill</h2>
+      <div class="grid">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2>auto-fit</h2>
+      <div class="grid fit">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

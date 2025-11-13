@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+
+    nav {
+
+      background-color: #111827;
+      color: white;
+      padding: 8px;
+      border-radius: 8px;
+    }
+
+    .hero {
+      background-color: #fde68a;
+      padding: 12px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="grid">
+    <Nav style="grid-column: 1 / 5;">네비게이션</Nav>
+    <div class="hero" style="grid-column: 1 / 3;">Hero</div>
+    <div class="promo" style="grid-column: 3 / 5;">Promo</div>
+    <section class="feed">
+      <div class="quick-links" style="grid-column: 1 / 2;">Quick Links</div>
+      <div class="card">피드1</div>
+      <div class="card">피드2</div>
+      <div class="card">피드3</div>
+      <div class="card">피드4</div>
+      <div class="card">피드5</div>
+      <div class="card">피드6</div>
+      <div class="ads" style="grid-column: 3 / 4;">광고 영역</div>
+    </section>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      /* display: grid를 하게되면 기본적으로 1행 1열이 있는 그리드 컨테이너가 됨 */
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      height: 100vh;
+      padding: 15px;
+      gap: 16px;
+    }
+
+    .sidebar {
+      background-color: #3498db;
+      color: white;
+      border-radius: 8px;
+      padding: 20px;
+    }
+
+    .content {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Sidebar</h2>
+      <p>메뉴 혹은 네비게이션이 들어감</p>
+    </aside>
+    <main class="content">
+      <h2>Content</h2>
+      <p>남은 공간을 전부 차지하는 영역임</p>
+      <p>본문 내용이 여기에 들어감</p>
+    </main>
+  </div>
+
+</body>
+
+</html>
