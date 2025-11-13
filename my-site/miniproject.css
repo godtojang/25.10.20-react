@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  transform: translateY(0);
+}
+
+.header-container {
+  max-width: 1500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 22px;
+  color: #adff2f;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.logo-text {
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+/* 배너 올린 후 수정 */
+.logo-newtext {
+  font-weight: 700;
+  font-size: 24px;
+  position: absolute;
+  top: -2px;
+  left: 0;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+}
+
+.header-act {
+  display: flex;
+  gap: 16px;
+}
+
+i {
+  color: #fff;
+  font-size: 20px;
+}
+
+.banner {
+  background-color: #2d3748;
+  background-repeat: no-repeat;
+  padding: 175px 0 25px 0;
+  position: relative;
+}
+
+@media (max-width: 1400px) {
+  .header-container,
+  .banner-container,
+  .main-container {
+    padding: 25px 30px 20px;
+  }
+}
+
+.banner-container {
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.banner-content {
+  grid-template-columns: 1fr;
+  gap: 30px;
+  display: grid;
+  align-items: center;
+}
+
+.banner-text {
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+
+.banner-title {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  line-height: 1.2;
+}
+
+.banner-subtitle {
+  font-size: 16px;
+  color: #e2e8f0;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.hero-banner::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.navlist {
+  border-bottom: 1px solid #f0f0f0;
+  position: sticky;
+  top: 60px;
+  z-index: 999;
+  transition: all 0.3s ease;
+}
+
+.nav-container {
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-tab.active {
+  color: #1a1a1a;
+  font-weight: 600;
+  border-bottom-color: #1a1a1a;
+}
+
+.nav-tab {
+  padding: 12px 18px;
+  color: #6b7280;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2 ease;
+  letter-spacing: -1px;
+}
+
+.main-container {
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  padding: 40px 20px;
+}
+
+.main-content {
+  max-width: 1500px;
+}
+
+.main-header {
+  margin-bottom: 32px;
+}
+
+.main-title {
+  letter-spacing: -0.3px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.card {
+  cursor: pointer;
+  border: none;
+  overflow: hidden;
+  transition: background-color 0.2s ease;
+  position: relative;
+}
+
+.cardimg {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e0e0e0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.cardimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-title {
+  margin-bottom: 2px;
+  line-height: 1.5;
+  letter-spacing: -0.2px;
+  display: grid;
+  overflow: hidden;
+  /* text-overflow: ellipsis; */
+}
+
+.card-price {
+  font-size: 18px;
+  font-weight: 500;
+}
