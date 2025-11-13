@@ -8,3 +8,5 @@ navTabs.forEach((tab) => {
     this.classList.add("active");
   });
 });
+
+// 작동 X
