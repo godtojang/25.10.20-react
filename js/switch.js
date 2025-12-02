@@ -1,0 +1,37 @@
+let day = 3;
+switch(day) {
+  case 1:
+    console.log("월요일이다.")
+    break;
+  case 2:
+    console.log("화요일이다.")
+    break;
+  case 3:
+    console.log("수요일이다.")
+    break;
+  default:
+    console.log("1~3의 값이 아니다.")
+}
+
+// 만약 break가 없다면
+let fruit = "apple"
+switch (fruit) {
+  case "apple":
+    console.log("사과를 선택했습니다.")
+  case "banana":
+    console.log("바나나를 선택했습니다.")
+  case "orange":
+    console.log("오렌지를 선택했습니다.")
+  default :
+    console.log("기타 과일입니다")
+}
+
+let ok = true;
+switch (ok) {
+  case true:
+    console.log("true 선택")
+    break;
+  case false:
+    console.log("false 선택")
+    break;
+}

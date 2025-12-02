@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    li {
+      list-style: none;
+      float: left;
+      margin-left: 10px;
+    }
+
+    ul {
+      overflow: hidden;
+    }
+
+    input {
+      border-style: none;
+    }
+  </style>
+</head>
+<body>
+  <table border="1">
+    <tr>
+      <th class="su">수1</th>
+      <td><input id="su1" placeholder="정수만 입력하세요"></td>
+    </tr>
+
+    <tr>
+      <th class="su">수2</th>
+      <td><input id="su2" placeholder="정수만 입력하세요"></td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <ul>
+          <li>
+            <input type="button" value="+" onclick="cal('+')">
+          </li>
+          <li>
+            <input type="button" value="-" onclick="cal('-')">
+          </li>
+          <li>
+            <input type="button" value="*" onclick="cal('*')">
+          </li>
+          <li>
+            <input type="button" value="/" onclick="cal('/')">
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <th>결과</th>
+      <td><input id="result"></td>
+    </tr>
+  </table>
+
+  <script src="calculator.js"></script>
+</body>
+</html>
