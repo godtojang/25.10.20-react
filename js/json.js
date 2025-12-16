@@ -1,0 +1,40 @@
+let person = {
+  "name": "홍길동",
+  "age": 20,
+  "isStudent": true,
+  "scores": [90, 85, 100],
+  "profile": {
+    "email": "test@test.com",
+    "phone": "010-1234-5678"
+  },
+  // 마지막에 쉼표 붙이면 안 됨
+  "etc": null
+}
+// js객체에서 프로퍼티를 사용하는 것처럼 사용할 수 있음
+console.log(person.name)
+console.log(person.score[2])
+console.log(person.profile.phone)
+
+// JSON을 자바스크립트에서 쓰는 방법
+// JSON.parse() : 문자열(JSON텍스트) -> 자바스크립트 객체
+const jsonText = `
+{
+  "name": "철수",
+  "age": 20,
+  "isStudent": true
+}
+`
+const obj = JSON.parse(jsonText)
+console.log(obj.name)
+console.log(obj.age)
+console.log(obj.isStudent)
+// 서버에서 받은 응답이 보통 문자열(JSON형태)이기 때문에
+// JS에서 사용하려면 파싱해서 객체로 바꾸는 과정이 필요
+
+// JS 객체를 -> JSON형식의 문자열로 바꾼다
+// 이 문자열을 서버로 보낼 때 사용
+const user = {
+  name: "영희",
+  age: 22,
+  isStudent: false
+}
